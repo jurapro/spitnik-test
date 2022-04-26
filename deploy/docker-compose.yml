@@ -40,8 +40,7 @@ services:
 
   auth-service:
     container_name: ${PROJECT_NAME}-auth-service
-    #build: ../auth-service
-    build: https://github.com/jurapro/egal-auth-service.git
+    build: ../auth-service
     environment:
       APP_SERVICE_NAME: auth
       APP_SERVICE_KEY: uZsLnAJz35FWUTVx@eg#Xirv6I*jcw2Y
@@ -55,8 +54,7 @@ services:
 
   core-service:
     container_name: ${PROJECT_NAME}-core-service
-    #build: ../core-service
-    build: https://github.com/jurapro/egal-core-service.git
+    build: ../core-service
     environment:
       APP_SERVICE_NAME: core
       APP_SERVICE_KEY: B#J5mUWKh8FqzQ6Tj0XtYruIcSwpb@ed
